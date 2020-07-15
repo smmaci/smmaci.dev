@@ -1,8 +1,11 @@
-.navigation {
-    min-width: 20%;
+.Navigation {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
   }
   
-  .navigation > ul {
+  .Navigation-list {
     list-style: none;
     padding: 0;
     margin: 0;
@@ -11,12 +14,12 @@
     align-items: baseline;
   }
   
-  .navigation-listitem {
+  .Navigation-listitem {
     z-index: 0;
     margin-bottom: .5rem;
   }
   
-  .navigation-link {
+  .Navigation-link {
     color: #333;
     text-decoration: none;
     position: relative;
@@ -24,11 +27,11 @@
     overflow: hidden;
   }
   
-  .navigation-link::before {
+  .Navigation-link::before {
     z-index: -1;
     display: block;
     content: "";
-    background-color: rgb(68, 168, 255);
+    background-color: rgb(90, 180, 255);
     height: 50%;
     position: absolute;
     top: 95%;
@@ -36,7 +39,7 @@
     width: 100%; 
   }
   
-  .navigation-link:hover::before {
+  .Navigation-link:hover::before {
     transition: top 0.15s ease-out;
     top: 50%;
   
