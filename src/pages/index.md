@@ -4,6 +4,6 @@ path: '/'
 
 *You've stumbled upon the personal site of*
 
-# Sam Mallamaci
+# Steph Mallamaci
 
 *Web Developer*
