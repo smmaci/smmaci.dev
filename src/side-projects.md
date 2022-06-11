@@ -1,7 +1,10 @@
 ---
-path: '/side-projects'
+date: 2022-06-11
+tags:
+  - posts
+layout: layouts/page.njk
+title: Side Projects
 ---
-
 # Side Projects
 
 ## Charades
