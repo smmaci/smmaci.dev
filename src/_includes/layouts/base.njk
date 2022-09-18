@@ -5,11 +5,13 @@
     {# This is the base template for the site–other templates extend this one #}
     
     <meta charset="utf-8" />
-    <link rel="icon" href="https://glitch.com/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/images/favicons/favicon-16x16.png">
+    <link rel="manifest" href="/images/favicons/site.webmanifest">
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="description" content="Your new 11ty blog" />
-    <link rel="stylesheet" type="text/css" href="/public/style.css" />
-    <link rel="stylesheet" type="text/css" href="/main.css" />
+    <link rel="stylesheet" type="text/css" href="/style.css" />
     {% seo "" %}
   </head>
   <body>
@@ -23,9 +25,11 @@
         <div class="links">
           <a href="/">Home</a>
           <span class="divider">|</span>
-          <a href="/posts">Posts</a>
-          <span class="divider">|</span>
           <a href="/about">About</a>
+          <span class="divider">|</span>
+          <a href="/side-projects">Side Projects</a>
+          <span class="divider">|</span>
+          <span>© 2022 Stephanie Mallamaci</span>
         </div>
       </footer>
     

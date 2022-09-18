@@ -1,7 +1,4 @@
 ---
-date: 2022-06-11
-tags:
-  - posts
 layout: layouts/home.njk
 ---
 

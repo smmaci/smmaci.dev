@@ -1,5 +1,7 @@
 const { DateTime } = require("luxon");
 const pluginSEO = require("eleventy-plugin-seo");
+const Image = require("@11ty/eleventy-img")
+
 
 /**
 * This is the JavaScript code that determines the config for your Eleventy site
@@ -40,6 +42,31 @@ module.exports = function(eleventyConfig) {
   });
 
   eleventyConfig.setBrowserSyncConfig({ ghostMode: false });
+
+    // --- START, eleventy-img
+    async function imageShortcode(src, alt, sizes) {
+      let metadata = await Image(src, {
+        widths: [300, 600],
+        formats: ["avif", "jpeg"],
+        urlPath: "/images/",
+        outputDir: "./build/images"
+      });
+    
+      let imageAttributes = {
+        alt,
+        sizes,
+        loading: "lazy",
+        decoding: "async",
+      };
+    
+      // You bet we throw an error on missing alt in `imageAttributes` (alt="" works okay)
+      return Image.generateHTML(metadata, imageAttributes);
+    }
+    eleventyConfig.addNunjucksAsyncShortcode("image", imageShortcode);
+  eleventyConfig.addLiquidShortcode("image", imageShortcode);
+  eleventyConfig.addJavaScriptFunction("image", imageShortcode);
+    // --- END, eleventy-img
+  
 
   /* Build the collection of posts to list in the site
      - Read the Next Steps post to learn how to extend this

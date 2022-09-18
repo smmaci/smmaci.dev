@@ -199,3 +199,6 @@ a:hover {
 .controls {
   margin: 3rem 0 2rem;
 }
+.postImage {
+  box-shadow: 0 10 var(--color-highlight-neg);
+}
