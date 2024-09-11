@@ -1,20 +1,21 @@
 /* Our default values set as CSS variables */
 :root {
-  --color-bg: lemonchiffon;
+  --color-tetradic-1: #fe5d26CF;
+  --color-tetradic-2: #5bfe26CF;
+  --color-tetradic-3: #26c7feCF;
+  --color-tetradic-4: #c926feCF;
+
+  --color-bg: white;
   --color-text-main: #000000;
-  --color-accent-pos: #7EBC89;
-  --color-highlight-pos: #C1DBB3;
-  --color-accent-neg: #FE5D26;
-  --color-highlight-neg: #F2C078;
+  --color-accent-pos: var(--color-tetradic-1);
+  --color-highlight-pos: var(--color-tetradic-3);
   --wrapper-height: 85vh;
   --image-max-width: 320px;
   --font-family: "HK Grotesk";
   --font-family-header: "HK Grotesk";
 
-  --color-heading-tetradic-1: #fe5d26CF;
-  --color-heading-tetradic-2: #5bfe26CF;
-  --color-heading-tetradic-3: #26c7feCF;
-  --color-heading-tetradic-4: #c926feCF;
+  --gutter-x: 2rem;
+
 }
 
 /* Basic page style resets */
@@ -41,9 +42,9 @@
 /* Navigation grid */
 .footer {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
   margin: 1rem auto 0;
-  padding: 1rem 0 0.75rem 0;
+  padding: 1rem var(--gutter-x) 0.75rem;
   width: 100%;
   flex-wrap: wrap;
   border-top: 4px solid var(--color-accent-pos);
@@ -60,14 +61,6 @@ a:visited {
   border-style: none;
 }
 
-.footer .links {
-  padding: 0.5rem 1rem 1.5rem;
-  white-space: nowrap;
-}
-
-.divider {
-  padding: 0 1rem;
-}
 
 body {
   font-family: var(--font-family);
@@ -76,7 +69,7 @@ body {
 .wrapper {
   min-height: var(--wrapper-height);
   place-items: center;
-  margin: 3rem 2rem 0;
+  margin: 3rem var(--gutter-x) 0;
 }
 .content {
   display: flex;
@@ -108,7 +101,7 @@ h1 {
   font-size: 5rem;
   display: inline-flex;
   color: var(--color-text-main);
-  text-shadow: var(--color-heading-tetradic-2) -3px -3px, var(--color-heading-tetradic-1) 3px -3px, var(--color-heading-tetradic-3) -3px 3px, var(--color-heading-tetradic-4) 3px 3px;
+  text-shadow: var(--color-tetradic-2) -3px -3px, var(--color-tetradic-1) 3px -3px, var(--color-tetradic-3) -3px 3px, var(--color-tetradic-4) 3px 3px;
 }
 h2 {
   font-size: 4rem;
@@ -144,12 +137,12 @@ ul.no-bullet {
 a:link,
 a:visited {
   text-decoration: none;
-  border-bottom: 6px solid var(--color-highlight-pos);
+  border-bottom: 6px solid var(--color-accent-pos);
   color: var(--foreground);
   transition: background 0.05s linear;
 }
 a:hover {
-  background: var(--color-highlight-pos);
+  background: var(--color-accent-pos);
 }
 
 /* Title style adjustments */
