@@ -1,5 +1,3 @@
-const { DateTime } = require("luxon")
-
 module.exports = function (eleventyConfig) {
   eleventyConfig.setTemplateFormats([
     // Templates:
