@@ -1,6 +1,7 @@
 {
+  "type": "module",
   "name": "smmaci.dev",
-  "version": "2.0.0",
+  "version": "3.0.0",
   "description": "Personal Site of Stephanie Mallamaci",
   "repository": {
     "type": "git",
