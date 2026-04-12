@@ -2,8 +2,20 @@
 layout: layouts/home.njk
 ---
 
-*You've stumbled upon the personal site of*
+*Hi, this is the home page of*
 
-# Steph Mallamaci
+# Stephanie Mallamaci
 
-*Web Developer*
+*Web Developer Extraordinaire*
+
+<hr />
+
+I am currently on sabbatical and not looking for work. A few places that I have worked in the past:
+
+[Tempus]("https://www.tempus.com")
+
+<small>Senior Software Engineer, Laboratory Systems</small>
+
+[Kroger]("https://www.kroger.com/")
+
+<small>Software Engineer, Kroger Technology & Digital</small>
