@@ -1,11 +1,11 @@
 ---
 layout: layouts/base.njk
+title: 'Steph M. | Home'
+pageTitle: 'Home'
 ---
 
-{# My Very Own Homepage #}
 <div class="wrapper home">
     {{ content | safe }}
-    <a href="">linkypooo</a>
     <ul>
         {%- for post in collections.posts -%}
         <li{% if page.url == post.url %} aria-current="page"{% endif %}>{{ post.data.page.date | htmlDateString }} — <a href='{{ post.url }}'>{{ post.data.title }}</a></li>

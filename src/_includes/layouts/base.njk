@@ -1,8 +1,6 @@
 ---
-title: 'Stephanie Mallamaci'
 ---
 
-{# 🦆🦆🦆 <- my row of ducks #}
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -10,8 +8,12 @@ title: 'Stephanie Mallamaci'
     <link rel="manifest" href="/site.webmanifest">
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" type="text/css" href="/style.css" />
+    <title>{{ title }}</title>
   </head>
   <body>
+    <header>
+      {{ pageTitle }}
+    </header>
     <main>
       {{ content | safe }}
     </main>

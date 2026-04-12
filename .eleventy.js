@@ -10,6 +10,7 @@ export default function (eleventyConfig) {
     "jpg",
     "png",
     "svg",
+    "ttf",
     "woff",
     "woff2",
   ])

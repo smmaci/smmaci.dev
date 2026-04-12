@@ -1,8 +1,9 @@
 /* Cdn fonts */
 @import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Libre+Caslon+Display&family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&display=swap");
+@import url('https://fonts.cdnfonts.com/css/boecklins-universe');
 
 :root {
-  --color-bg: #fffacd;
+  --color-bg: papayawhip;
   --color-text: #121417;
   --color-dred: #9e1100;
   --color-lred: #d42300;
@@ -11,8 +12,8 @@
   --color-orange: #eb9900;
   --wrapper-height: 85vh;
   --image-max-width: 320px;
-  --font-family: "Libre Caslon Text";
-  --font-family-header: "Libre Caslon Display";
+  --font-family-text: "Libre Caslon Text";
+  --font-family-heading: "Libre Caslon Display";
 }
 
 * {
@@ -24,7 +25,7 @@
 
 /* Typography */
 p {
-  margin: 0 0 1rem 0;
+  margin: 0 0 .5rem 0;
   line-height: 1.5 !important;
   font-size: 1rem;
 }
@@ -34,13 +35,13 @@ h3,
 h4,
 h5 {
   margin: 2rem 0 0.8rem;
-  font-family: var(--font-family-header);
+  font-family: var(--font-family-heading);
   font-weight: 600;
   line-height: 1.1;
   color: var(--color-text);
 }
 h1 {
-  margin-top: 1rem;
+  margin-top: 0rem;
   margin-bottom: 1.75rem;
   font-size: 5rem;
   display: inline-flex;
@@ -65,22 +66,21 @@ small,
 ul > li,
 ol > li {
   margin-bottom: 0.75rem;
-  line-height: 1.5;
+  line-height: 1rem;
   font-size: 1rem;
 }
 ul {
-  padding: 0 0 0 18px;
+  padding: 0 0 0 1rem;
   margin: 0;
-}
-ul.no-bullet {
-  list-style-type: none;
+  list-style-type:disc;
 }
 
 /* Link styles */
 a:link,
 a:visited {
-  line-height: 1.5rem;
+  line-height: 1rem;
   text-decoration: underline;
+  font-weight: 700;
   color: var(--color-text);
   transition: background 0.05s linear;
 }
@@ -89,16 +89,41 @@ a:hover {
 }
 
 body {
-  background: papayawhip;
+  background: var(--color-bg);
+  padding: 1rem;
+  border: var(--color-text) solid;
+  border-radius: .5rem;
+  font-family: var(--font-family-text);
 }
 
-/* Layout: Home */
-.home {
+header {
+  text-align: center;
+  margin: -1rem;
+  margin-bottom: 1rem;
+  justify-content: center;
+  background-color: var(--color-text);
+  color: var(--color-bg);
+  font-family: 'Boecklins Universe', serif;
+  font-size: 2rem;
+  position: sticky;
+  top: 0;
 }
 
-/* Layout: Post */
-.post {
+/* Who doesn't appreciate a thematic break? */
+hr {
+  border: none;
+  border-top: var(--color-text) .25rem double;
+  color: var(--color-text);
+  overflow: visible;
+  text-align: center;
+  height: .75rem;
+  margin: 1rem 0;
 }
 
-.controls {
+hr::after {
+  content: "§";
+  background: var(--color-bg);
+  padding: 0 .25rem;
+  position: relative;
+  top: -.75rem;
 }
