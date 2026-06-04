@@ -1,5 +1,5 @@
 ---
-layout: layouts/home.njk
+layout: layouts/base.njk
 ---
 
 *Hi, this is the home page of*
@@ -12,10 +12,10 @@ layout: layouts/home.njk
 
 I am currently on sabbatical and not looking for work. A few places that I have worked in the past:
 
-[Tempus]("https://www.tempus.com")
+[Tempus](https://www.tempus.com)
 
 <small>Senior Software Engineer, Laboratory Systems</small>
 
-[Kroger]("https://www.kroger.com/")
+[Kroger](https://www.kroger.com/)
 
-<small>Software Engineer, Kroger Technology & Digital</small>
+<small>Software Engineer, Kroger Technology & Digital, Kroger Design System</small>
