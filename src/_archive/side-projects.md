@@ -1,6 +1,4 @@
 ---
-date: 2022-06-11
-layout: layouts/page.njk
 title: Side Projects
 ---
 # Side Projects
