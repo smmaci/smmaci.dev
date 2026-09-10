@@ -1,5 +1,6 @@
 ---
 layout: layouts/base.njk
+title: Stephanie Mallamaci
 ---
 
 *Hi, this is the home page of*
@@ -10,7 +11,7 @@ layout: layouts/base.njk
 
 <hr />
 
-I am currently on sabbatical and not looking for work. A few places that I have worked in the past:
+I am looking for work and would love to get in touch! A few places that I have worked in the past:
 
 [Tempus](https://www.tempus.com)
 
