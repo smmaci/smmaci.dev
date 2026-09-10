@@ -7,7 +7,7 @@ title: Stephanie Mallamaci
 
 # Stephanie Mallamaci
 
-*Web Developer Extraordinaire*
+<div id="byline">Web Developer Extraordinaire</div>
 
 <hr />
 

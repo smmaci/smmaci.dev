@@ -15,6 +15,7 @@ export default function (eleventyConfig) {
     "woff2",
   ])
   eleventyConfig.addPassthroughCopy("public")
+  eleventyConfig.addPassthroughCopy("src/script.js")
 
   return {
     dir: {
