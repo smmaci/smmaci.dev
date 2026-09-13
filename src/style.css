@@ -167,22 +167,12 @@ body {
   place-self: end start;
 }
 
-.accent > div {
-  content: "";
-}
-
 .accent > div:nth-child(1) { background: var(--color-dred); }
 .accent > div:nth-child(2) { background: var(--color-lred); }
 .accent > div:nth-child(3) { background: var(--color-lgreen); }
 .accent > div:nth-child(4) { background: var(--color-dgreen); }
 .accent > div:nth-child(5) { background: var(--color-orange); }
 .accent > div:nth-child(6) { background: var(--color-flower-blue); }
-
-/*
-Many thanks to https://pattern.monster (https://github.com/catchspider2002/svelte-svg-patterns)
-For a wonderful collection of tile-able svgs
-I've tweaked most of these a little 
-*/
 
 .motif-grid::after {
   content: "";
@@ -212,6 +202,15 @@ I've tweaked most of these a little
   height: 100%;
   background-color: var(--color-bg);
   mask: url("/assets/motif_waves.svg");
+}
+
+.motif-scales::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-color: var(--color-bg);
+  mask: url("/assets/motif_scales.svg");
 }
 
 .page-container {
